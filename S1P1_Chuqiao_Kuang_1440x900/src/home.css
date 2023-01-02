@@ -1,0 +1,319 @@
+@font-face
+{
+  font-family: Lato Lato-Bold;
+  src: url('../font/Lato-Regular.ttf' '../font/Lato-Bold.ttf');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  display: grid;
+  font-family: Lato;
+  margin: 0;
+  padding: 0;
+}
+/*------------------------------------------Navigation--------------------------------------*/
+/*topNav*/
+#topNav {
+  display: grid;
+  grid-template-columns: auto 200px 200px 200px;
+  gap: 5px;
+  background-color: #242526;
+  padding: 5px;
+}
+
+#topNav > .navLink {
+  text-align: center;
+  padding: 15px 0;
+  font-size: 1.5em;
+  font-style: bold;
+  font-family: Lato;
+  font-variant: small-caps;
+  color:  #FBF8CC;
+  text-decoration: none;
+  margin-top: 25px;
+}
+
+#topNav >.navLink:hover{
+  color: #74c1c3;
+  text-decoration: none;
+}
+
+#home{
+  width: 180px;
+  margin-left: 50px;
+}
+
+/*bottomNav*/
+#bottomNav {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  column-gap: 5px;
+  background-color: #FBF8CC;
+  padding: 5px 80px;
+}
+
+#bottomNav > .navLink {
+  padding: 20px 0;
+  color: #525252;
+  text-decoration: none;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+#bottomNav >.navLink:hover{
+  color: #74c1c3;
+  text-decoration: none;
+}
+/*------------------------------------------Main Content--------------------------------------*/
+/*Main Content*/
+#headline{
+  display: grid;
+  grid-template-rows: auto auto;
+  background-size: 100%;
+  height: 600px;
+  background-position: bottom;
+  padding-left: 180px;
+  padding-bottom: 340px;
+  color: #242526;
+  margin: 0px;
+}
+
+#slogan{
+  font-family: Lato;
+  font-size: 80px;
+  line-height: 1.1;
+  text-align: left;
+  width: 60%;
+  padding-top: 30px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.button1{
+  background-color: #FDE4CF;; 
+  border: 1px solid darkred;
+  color: darkred;
+  text-align: center;
+  font-size: 1.2em;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border-radius: 8px;
+  width: 400px;
+  height: 50px;
+  padding: 5px;
+}
+
+#headline button:hover {
+  background-color: #FFB703;
+  color: #242526;
+}
+
+#headline button > a{
+  color: darkred;
+  text-decoration: none;
+}
+
+#headline{
+  width: 100%;
+  min-height: 820px;
+  position: relative;
+  background-image: url("../img/PSD1_A Poster of A Girl on Stage.JPG");;
+  background-size: 120%;
+}
+      
+#headline:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 231px;
+    background: url(../img/wave.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*subHead*/
+#subheadA{
+  display: flex;
+  flex-direction: row;
+}
+
+.cap{
+  font-family: Lato;
+  font-size: 41px;
+  font-style: bold;
+  text-align: right;
+  padding: 40px;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.low{
+  font-family: Lato;
+  font-size: 20px;
+  text-align: left;
+  padding: 70px;
+  margin-right: 60px;
+  line-height: 1.5;
+}
+
+@media(max-width: 800px){
+  #subhead{
+    flex-direction: column;
+  }
+}
+
+hr{
+  border: 2px solid black;
+}
+
+#subheadB{
+  font-family: Lato;
+  font-size: 1.2em;
+  padding: 20px 120px;
+  font-style: italic;
+  margin-bottom: 40px;
+}
+/*CTA*/
+#CTA{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 5px 40px;
+  padding: 60px 170px;
+}
+
+#CTA > div, button{
+  color: darkred;
+  text-align: center;
+  text-family: Lato-Bold;
+  padding: 30px;
+  font-weight: bold;
+}
+
+#CTA > div {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-size: 35px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+
+#CTA > button{
+  border: 2px solid darkred;
+  border-radius: 10px;
+  background-color: #FDE4CF;;
+  padding: 16px 32px;
+  text-decoration: none;
+  display: inline-grid;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 500px;
+}
+
+#CTA > button:hover {
+  background-color: #FFB703;
+  color: darkred;
+}
+
+#CTA a{
+  color: darkred;
+  text-decoration: none;
+}
+
+
+/*Introduction*/
+#more{
+  background-image: url("../img/PSD2_The Empty Stage with Disappeared Performers.JPG");
+  background-size: 100%;
+  border: 2px solid black;
+}
+
+#intro{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  column-gap: 20px;  
+  padding: 20px 100px;
+  margin: 50px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.5;
+}
+
+#intro > img{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+#intro > p{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-align: center;
+  line-height: 1.4;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  font-weight: 600;
+  color: #000000;
+}
+
+/*--------------------------------------------Footer----------------------------------------*/
+footer{
+  background-color: #FBF8CC;
+  height: 255px;
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+
+h4{
+  font-family: Lato;
+  font-size: 1.5em;
+  font-variant-caps: small-caps;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul > li{
+  display: inline-block;
+  width: 5%;
+  border: 0px;
+}
+
+li a {
+  display: block;
+  padding: 16px;
+}
+
+.app{
+  width:100%;
+  transition: transform .2s;
+}
+
+.app:hover{
+  transform: scale(1.2);
+}
+
+#copyright{
+  color: #242526;
+  text-align: center;
+  padding-bottom: 60px;
+  margin-top: 25px;
+  font-size: 1.2em;
+}

@@ -1,0 +1,283 @@
+@font-face
+{
+  font-family: Lato Lato-Bold;
+  src: url('../font/Lato-Regular.ttf' '../font/Lato-Bold.ttf');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  display: grid;
+  font-family: Lato;
+  margin: 0;
+  padding: 0;
+}
+/*------------------------------------------Navigation--------------------------------------*/
+/*topNav*/
+#topNav {
+  display: grid;
+  grid-template-columns: auto 200px 200px 200px;
+  gap: 5px;
+  background-color: #242526;
+  padding: 5px;
+}
+
+#topNav > .navLink {
+  text-align: center;
+  padding: 15px 0;
+  font-size: 1.5em;
+  font-style: bold;
+  font-family: Lato;
+  font-variant: small-caps;
+  color:  #FBF8CC;
+  text-decoration: none;
+  margin-top: 25px;
+}
+
+#topNav >.navLink:hover{
+  color: #74c1c3;
+  text-decoration: none;
+}
+
+#home{
+  width: 180px;
+  margin-left: 50px;
+}
+
+/*bottomNav*/
+#bottomNav {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  column-gap: 5px;
+  background-color: #FBF8CC;
+  padding: 5px 80px;
+}
+
+#bottomNav > .navLink {
+  padding: 20px 0;
+  color: #525252;
+  text-decoration: none;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+#bottomNav >.navLink:hover{
+  color: #74c1c3;
+  text-decoration: none;
+}
+/*------------------------------------------Main Content--------------------------------------*/
+.aboutTitle{
+  font-size: 50px;
+  font-weight: 400;
+  font-family: Lato;
+  text-align: center;
+  padding: 60px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+/*aboutInstructor*/
+#aboutInstructor{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  font-family: Lato;
+  font-size: 1.3em;
+  padding: 20px 130px;
+}
+
+#aboutInstructor a, #aboutInstructor img{
+  width: 380px;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+#aboutInstructor > h3{
+  color: darkred;
+  margin-top: 60px;
+  margin-bottom: 0px;
+  padding-left: 30px;
+}
+
+#aboutInstructor > p{
+  margin-bottom: 50px;
+  margin-top: 0px;
+  line-height: 1.4;
+  padding-left: 30px;
+}
+
+/*aboutOrganization*/
+#aboutOrganization{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  font-family: Lato;
+  font-size: 1.3em;
+  padding: 60px 130px 0px 130px;
+  margin-bottom: 0px;
+}
+
+#aboutOrganization > h3{
+  color: darkred;
+  margin-top: 80px;
+  margin-bottom: 0px;
+  padding-right: 30px;
+  padding-left: 50px;
+}
+
+#aboutOrganization > p{
+  margin-bottom: 30px;
+  margin-top: 18px;
+  line-height: 1.4;
+  padding-right: 60px;
+  padding-left: 50px;
+}
+
+#aboutOrganization a, #aboutOrganization img{
+  width: 500px;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+#aboutOrganization  img{
+  border-radius: 80%;
+  box-shadow: 0px 30px 1px #311a14;
+}
+
+#aboutOrganization > div{
+  padding-right: 30px;
+  padding-bottom: 80px;
+  padding-left: 50px;
+}
+#aboutOrganization button{
+  background-color: #FBF8CC; 
+  border: 2px solid darkred;
+  color: darkred;
+  text-align: center;
+  font-size: 1.3em;
+  font-variant: small-caps;
+  margin: 5px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border-radius: 8px;
+  width: 390px;
+  height: 52px;
+}
+
+#aboutOrganization button:hover {
+  background-color: #FFB703;
+  color: #242526;
+}
+
+#aboutOrganization button > a{
+  color: darkred;
+  text-decoration: none;
+}
+
+/*aboutMission*/
+#aboutMission{
+  display: grid;
+  grid-template-rows: auto auto auto;
+  margin: 40px 120px 40px 120px;
+}
+
+#aboutMission > div{
+  font-family: Lato;
+  color: #242526;
+  padding: 10px 92px;
+}
+
+.missionTitle{
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+  margin: 10px;
+}
+
+.missionInfo{
+  font-size: 1.3em;
+  text-align: center;
+  margin-bottom: 0px;
+  line-height: 1.5;
+}
+
+#aboutMission button{
+  background-color: #8EECF5; 
+  border: none;
+  color: #242526;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 550;
+  margin: 35px 38% 40px 38%;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border-radius: 8px;
+  width: 300px;
+  height: 80px;
+  padding: 17px;
+}
+
+#aboutMission button:hover {
+  background-color: #A3C4F3;
+  color: #242526;
+}
+#aboutMission a{
+  text-decoration: none;
+  color: darkred;
+}
+
+/*--------------------------------------------Footer----------------------------------------*/
+footer{
+  background-color: #FBF8CC;
+  height: 255px;
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+
+h4{
+  font-family: Lato;
+  font-size: 1.5em;
+  font-variant-caps: small-caps;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul > li{
+  display: inline-block;
+  width: 5%;
+  border: 0px;
+}
+
+li a {
+  display: block;
+  padding: 16px;
+}
+
+.app{
+  width:100%;
+  transition: transform .2s;
+}
+
+.app:hover{
+  transform: scale(1.2);
+}
+
+#copyright{
+  color: #242526;
+  text-align: center;
+  padding-bottom: 60px;
+  margin-top: 25px;
+  font-size: 1.2em;
+}
